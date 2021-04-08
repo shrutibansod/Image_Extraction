@@ -3,6 +3,14 @@ Assuming that you already have a system for detecting handwriting using OCR, her
 # Image_Extraction
 Here the code for extracting images from an image or a scanned book is attached.
 
+flow of the code is:
+1. Convert the image to grayscale, which is necessary for some of the algorithms
+2. Apply a binary filter converting image to black and white
+3. Optionally, apply an erode or dilate filter (Here dilation is used)
+4. Optionally, apply Canny edge detection
+5. Find contours (i.e. what appears to be lines)
+6. Filter contours which are very small or very large, to avoid extracting small things like defects, letters, etc. or large artifacts like borders from the scanning process which span an entire edge
+
 
 # Input
 All the input files can be found in /content/sample_data/ folder in colab named as:

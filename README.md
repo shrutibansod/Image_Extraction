@@ -4,9 +4,13 @@ Assuming that you already have a system for detecting handwriting using OCR, her
 Here the code for extracting images from an image or a scanned book is attached.
 
 
-
 # Input
-In this folder, all the input files are present
+All the input files can be found in /content/sample_data/ folder in colab named as:
+1. download.jpeg
+2. images1.jpeg
+3. images2.jpeg
+4. Capture.png
+5. urinary.jpeg
 
 # Output
-In this folder, all the output files are present
+All the output files can be found in /content/sample_data/output folder in colab. Here some text containing images are also detected but this problem can be solved by adding a system for detecting handwriting using OCR.
